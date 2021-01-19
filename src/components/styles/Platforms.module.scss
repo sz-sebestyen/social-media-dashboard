@@ -1,0 +1,54 @@
+.header {
+  position: relative;
+
+  .title {
+    color: white;
+  }
+
+  .totalFollowers {
+    color: hsl(228, 34%, 66%);
+  }
+
+  .themeCheck {
+    display: none;
+    appearance: none;
+  }
+
+  .ctLabel {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 90px;
+    height: 50px;
+    border-radius: 25px;
+
+    background-image: linear-gradient(
+      to right,
+      hsl(210, 78%, 56%),
+      hsl(146, 68%, 55%)
+    );
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-120%, -50%);
+      content: "Dark Mode";
+      display: block;
+      color: hsl(228, 34%, 66%);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      background-color: hsl(232, 19%, 15%);
+    }
+  }
+}

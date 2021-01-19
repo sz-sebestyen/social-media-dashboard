@@ -1,21 +1,40 @@
-import FollowerCard from './FollowerCard';
+import FollowerCard from "./FollowerCard";
+
+import styles from "./styles/Platforms.module.scss";
 
 function Platforms(props) {
-	//console.log(props);
-	const {list} = props;
-	return (
-		<div className="platforms-wrapper">
-			<div className="header">
-				<div className="title">Social Media Dashboard</div>
-				<div className="total-followers">Total Followers:</div>
-				<label htmlFor="color-theme">Dark Mode</label>
-				<input type="checkbox" name="color-theme" id="color-theme"/>
-			</div>
-			<div className="followers-card-container">
-				{list.map((e, i) => <FollowerCard key={i} data={e}/>)}
-			</div>
-		</div>
-	);
+  const { list } = props;
+  console.log(list);
+
+  const fs = list
+    .map((e) => {
+      const key = Object.keys(e)[0];
+      return e[key].followers;
+    })
+    .reduce((acc, cur) => acc + cur);
+
+  return (
+    <div className="platformsWrapper">
+      <div className={styles.header}>
+        <div className={styles.title}>Social Media Dashboard</div>
+        <div className={styles.totalFollowers}>
+          Total Followers: {fs.toLocaleString()}
+        </div>
+        <input
+          type="checkbox"
+          name="colorTheme"
+          id="colorTheme"
+          className={styles.themeCheck}
+        />
+        <label htmlFor="colorTheme" className={styles.ctLabel}></label>
+      </div>
+      <div className="followersCardContainer">
+        {list.map((e, i) => (
+          <FollowerCard key={i} data={e} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Platforms;
