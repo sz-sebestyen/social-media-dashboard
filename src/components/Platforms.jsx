@@ -1,6 +1,8 @@
+import FollowerCard from './FollowerCard';
+
 function Platforms(props) {
+	//console.log(props);
 	const {list} = props;
-	console.log(list);
 	return (
 		<div className="platforms-wrapper">
 			<div className="header">
@@ -10,7 +12,7 @@ function Platforms(props) {
 				<input type="checkbox" name="color-theme" id="color-theme"/>
 			</div>
 			<div className="followers-card-container">
-
+				{list.map((e, i) => <FollowerCard key={i} data={e}/>)}
 			</div>
 		</div>
 	);
