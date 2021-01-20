@@ -6,6 +6,11 @@
   background-color: hsl(228, 28%, 20%);
   border-radius: 4px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
   .topLine {
     height: 4px;
     border-radius: 4px 4px 0 0;
@@ -34,7 +39,7 @@
   }
 
   .change {
-    color: hsl(228, 34%, 66%);
+    color: hsl(356, 69%, 56%);
     text-align: center;
   }
 }

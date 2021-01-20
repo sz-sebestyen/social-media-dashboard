@@ -14,7 +14,7 @@ function Platforms(props) {
     .reduce((acc, cur) => acc + cur);
 
   return (
-    <div className="platformsWrapper">
+    <div className={styles.platformsWrapper}>
       <div className={styles.header}>
         <div className={styles.title}>Social Media Dashboard</div>
         <div className={styles.totalFollowers}>

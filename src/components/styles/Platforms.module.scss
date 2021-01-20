@@ -1,11 +1,18 @@
+.platformsWrapper {
+  padding: 30px 0;
+}
+
 .header {
   position: relative;
 
   .title {
     color: white;
+    font-weight: 700;
+    font-size: 1.6em;
   }
 
   .totalFollowers {
+    font-weight: 700;
     color: hsl(228, 34%, 66%);
   }
 
@@ -19,9 +26,9 @@
     top: 0;
     right: 0;
 
-    width: 90px;
-    height: 50px;
-    border-radius: 25px;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
 
     background-image: linear-gradient(
       to right,
@@ -36,6 +43,8 @@
       position: absolute;
       top: 50%;
       left: 0;
+      white-space: nowrap;
+      font-weight: 700;
       transform: translate(-120%, -50%);
       content: "Dark Mode";
       display: block;
@@ -45,9 +54,9 @@
     &::after {
       content: "";
       display: block;
-      height: 40px;
-      width: 40px;
-      border-radius: 20px;
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
       background-color: hsl(232, 19%, 15%);
     }
   }
@@ -59,4 +68,5 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+  padding-top: 30px;
 }
