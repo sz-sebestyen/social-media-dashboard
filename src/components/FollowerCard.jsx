@@ -15,7 +15,7 @@ function FollowerCard(props) {
           src={MapSocials(mediaKey)}
           alt={mediaKey + " icon"}
           className={styles.platformIcon}
-          width="30px"
+          width="20px"
         />
         <span className={styles.name}>
           {(mediaKey !== "youtube" ? "@" : "") + stats.name}
@@ -23,7 +23,9 @@ function FollowerCard(props) {
       </div>
       <div className={styles.value}>{stats.followers}</div>
       <div className={styles.followers}>followers</div>
-      <div className={styles.change}>{Math.abs(stats.difference)} Today</div>
+      <span className={styles.change}>
+        ^ {Math.abs(stats.difference)} Today
+      </span>
     </div>
   );
 }

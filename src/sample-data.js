@@ -16,7 +16,7 @@ const data = {
       modifier: 1375,
     },
     { platform: "twitter", type: "Retweets", amount: 117, modifier: 303 },
-    { platform: "twitter", type: "Likes", amoount: 507, modifier: 553 },
+    { platform: "twitter", type: "Likes", amount: 507, modifier: 553 },
     { platform: "youtube", type: "Likes", amount: 107, modifier: -19 },
     { platform: "youtube", type: "Total Views", amount: 1407, modifier: -12 },
   ],

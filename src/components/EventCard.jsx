@@ -10,6 +10,7 @@ import {
 
 function EventCard(props) {
   const { data } = props;
+  console.log(data);
   return (
     <div className={eventCardWrapper}>
       <div className={type}>{data.type}</div>
@@ -17,10 +18,10 @@ function EventCard(props) {
         src={MapSocials(data.platform)}
         alt={data.platform + " icon"}
         className={platformIcon}
-        width="30px"
+        width="20px"
       />
       <div className={amount}>{data.amount}</div>
-      <div className={modifier}>{Math.abs(data.modifier)}</div>
+      <div className={modifier}>^ {Math.abs(data.modifier)}</div>
     </div>
   );
 }
