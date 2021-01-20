@@ -15,6 +15,7 @@
 
   .type {
     color: hsl(228, 34%, 66%);
+    font-weight: 700;
   }
 
   .platformIcon {
@@ -24,6 +25,7 @@
   .amount {
     place-self: end start;
     font-size: 35px;
+    font-weight: 700;
     line-height: 1;
     color: white;
   }
@@ -31,5 +33,6 @@
   .modifier {
     place-self: end end;
     color: hsl(163, 72%, 41%);
+    font-weight: 700;
   }
 }

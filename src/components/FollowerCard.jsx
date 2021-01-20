@@ -22,7 +22,7 @@ function FollowerCard(props) {
         </span>
       </div>
       <div className={styles.value}>{stats.followers}</div>
-      <div className={styles.followers}>followers</div>
+      <div className={styles.followers}>FOLLOWERS</div>
       <span className={styles.change}>
         ^ {Math.abs(stats.difference)} Today
       </span>

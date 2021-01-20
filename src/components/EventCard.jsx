@@ -21,7 +21,7 @@ function EventCard(props) {
         width="20px"
       />
       <div className={amount}>{data.amount}</div>
-      <div className={modifier}>^ {Math.abs(data.modifier)}</div>
+      <div className={modifier}>^ {Math.abs(data.modifier)}%</div>
     </div>
   );
 }
