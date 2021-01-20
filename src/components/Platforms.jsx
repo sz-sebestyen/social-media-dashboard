@@ -28,7 +28,7 @@ function Platforms(props) {
         />
         <label htmlFor="colorTheme" className={styles.ctLabel}></label>
       </div>
-      <div className="followersCardContainer">
+      <div className={styles.followersCardContainer}>
         {list.map((e, i) => (
           <FollowerCard key={i} data={e} />
         ))}

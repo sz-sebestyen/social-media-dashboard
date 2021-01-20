@@ -1,0 +1,40 @@
+.followerCardWrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 220px;
+  height: 180px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 4px;
+
+  .topLine {
+    height: 4px;
+    border-radius: 4px 4px 0 0;
+    background-color: hsl(208, 92%, 53%);
+  }
+
+  .contactWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    color: hsl(228, 34%, 66%);
+  }
+
+  .value {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+
+  .followers {
+    letter-spacing: 0.3em;
+    color: hsl(228, 34%, 66%);
+    text-align: center;
+  }
+
+  .change {
+    color: hsl(228, 34%, 66%);
+    text-align: center;
+  }
+}
