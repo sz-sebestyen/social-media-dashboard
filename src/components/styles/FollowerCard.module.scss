@@ -9,12 +9,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 
   .topLine {
     height: 4px;
     border-radius: 4px 4px 0 0;
-    background-color: hsl(208, 92%, 53%);
   }
 
   .contactWrapper {
@@ -24,6 +24,7 @@
     gap: 0.5em;
     color: hsl(228, 34%, 66%);
     font-weight: 700;
+    margin: 9px 0;
   }
 
   .value {
@@ -37,10 +38,37 @@
     letter-spacing: 0.3em;
     color: hsl(228, 34%, 66%);
     text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
   }
 
   .change {
-    color: hsl(356, 69%, 56%);
     text-align: center;
+    font-size: 0.9em;
   }
+}
+
+.green {
+  color: hsl(163, 72%, 41%);
+}
+.red {
+  color: hsl(356, 69%, 56%);
+}
+
+.facebook {
+  background-color: hsl(208, 92%, 53%);
+}
+.twitter {
+  background-color: hsl(203, 89%, 53%);
+}
+.instagram {
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+.youtube {
+  background-color: hsl(348, 97%, 39%);
 }

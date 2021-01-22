@@ -6,6 +6,8 @@ import {
   platformIcon,
   amount,
   modifier,
+  green,
+  red,
 } from "./styles/EventCard.module.scss";
 
 function EventCard(props) {
@@ -21,7 +23,9 @@ function EventCard(props) {
         width="20px"
       />
       <div className={amount}>{data.amount}</div>
-      <div className={modifier}>^ {Math.abs(data.modifier)}%</div>
+      <div className={`${modifier} ${data.modifier > 0 ? green : red}`}>
+        {data.modifier > 0 ? "⏶" : "⏷"} {Math.abs(data.modifier)}%
+      </div>
     </div>
   );
 }

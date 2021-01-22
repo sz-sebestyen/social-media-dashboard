@@ -9,7 +9,7 @@ function FollowerCard(props) {
 
   return (
     <div className={styles.followerCardWrapper}>
-      <div className={styles.topLine}></div>
+      <div className={`${styles.topLine} ${styles[mediaKey]}`}></div>
       <div className={styles.contactWrapper}>
         <img
           src={MapSocials(mediaKey)}
@@ -23,8 +23,12 @@ function FollowerCard(props) {
       </div>
       <div className={styles.value}>{stats.followers}</div>
       <div className={styles.followers}>FOLLOWERS</div>
-      <span className={styles.change}>
-        ^ {Math.abs(stats.difference)} Today
+      <span
+        className={`${styles.change} ${
+          stats.difference > 0 ? styles.green : styles.red
+        }`}
+      >
+        {stats.difference > 0 ? "⏶" : "⏷"} {Math.abs(stats.difference)} Today
       </span>
     </div>
   );

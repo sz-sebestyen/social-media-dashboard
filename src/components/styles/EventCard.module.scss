@@ -32,7 +32,13 @@
 
   .modifier {
     place-self: end end;
-    color: hsl(163, 72%, 41%);
-    font-weight: 700;
+    font-size: 0.9em;
   }
+}
+
+.green {
+  color: hsl(163, 72%, 41%);
+}
+.red {
+  color: hsl(356, 69%, 56%);
 }
