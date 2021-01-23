@@ -5,7 +5,7 @@
   background-color: hsl(230, 17%, 14%);
 
   .backgroundTop {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -18,7 +18,8 @@
   .dashboardContent {
     position: relative;
     z-index: 2;
-    max-width: 1000px;
+    max-width: 955px;
     margin: 0 auto;
+    padding: 15px;
   }
 }

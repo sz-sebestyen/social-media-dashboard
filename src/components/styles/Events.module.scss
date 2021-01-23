@@ -8,7 +8,10 @@
 .eventsCardContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   gap: 25px;
+
+  @media only screen and (max-width: 540px) {
+    justify-content: center;
+  }
 }

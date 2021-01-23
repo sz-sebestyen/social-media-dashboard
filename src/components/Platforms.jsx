@@ -20,6 +20,8 @@ function Platforms(props) {
         <div className={styles.totalFollowers}>
           Total Followers: {fs.toLocaleString()}
         </div>
+      </div>
+      <div className={styles.settingWrapper}>
         <input
           type="checkbox"
           name="colorTheme"
