@@ -1,6 +1,6 @@
 # Social media dashboard
 
-I got this exercise at Codecool. I implemented the given design of a webpage with react and sass. The page shows information about ones social medias, such as follower and like changes.
+I got this exercise in Codecool's junior fronted developer course. I implemented the given design of a webpage with react and sass. The page shows information about ones social medias, such as follower and like changes.
 
 A screenshot of me finished work:
 ![Screenshot of the finished project](/screenshots/desktop.png)
@@ -43,4 +43,4 @@ Serve the build folder.
 serve -s build
 ```
 
-Then click the link in the shell to open the page in your default browser.
+Then visit the link shown in the terminal.
